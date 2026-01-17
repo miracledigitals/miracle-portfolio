@@ -347,8 +347,44 @@ ul {
     }
 
     /* Layout Tweaks */
+    .hero-content {
+        text-align: center;
+        margin: 0 auto;
+    }
+
     .hero-name {
         font-size: 2.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-headline,
+    .hero-sub,
+    .hero-location {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .hero-cta .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section-header {
+        text-align: center;
+    }
+
+    .title-line {
+        margin: 0 auto;
     }
 
     .section {
@@ -891,5 +927,18 @@ ul {
 
     .highlights-grid {
         grid-template-columns: 1fr;
+    }
+
+    .centered-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cert-badge {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+        border-radius: var(--radius-lg);
     }
 }
